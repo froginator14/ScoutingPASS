@@ -11,6 +11,7 @@ var config_data = `
       "size": 5,
       "maxSize": 5,
       "required": "true"
+    },
     { "name": "Team Number",
       "code": "t",
       "type": "number"
