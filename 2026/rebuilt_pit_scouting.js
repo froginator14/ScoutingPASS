@@ -23,11 +23,11 @@ var config_data = `
       "code": "drv",
       "type": "radio",
       "choices": {
-        "s": "Swerve<br>",
-        "w": "West Coast/Tank<br>",
-        "b": "Butterfly/Grashopper<br>",
-        "m": "Mechanum<br>",
-        "o": "Other"
+        "Swerve": "Swerve<br>",
+        "Tank": "West Coast/Tank<br>",
+        "Butterfly/Grasshopper": "Butterfly/Grasshopper<br>",
+        "Mechanum": "Mechanum<br>",
+        "Other": "Other"
       },
       "defaultValue": "o"
     },
@@ -41,10 +41,10 @@ var config_data = `
       "code": "sr",
       "type": "radio",
       "choices": {
-        "1": "L1 (8.14:1)<br>",
-        "2": "L2 (6.75:1)<br>",
-        "3": "L3 (6.12:1)<br>",
-        "4": "L4 (5.14:1)<br>",
+        "L1": "L1 (8.14:1)<br>",
+        "L2": "L2 (6.75:1)<br>",
+        "L3": "L3 (6.12:1)<br>",
+        "L4": "L4 (5.14:1)<br>",
         "o": "Other ratio (put in comments)<br>",
         "x": "Not Swerve"
       },
@@ -54,14 +54,15 @@ var config_data = `
       "code": "mot",
       "type": "radio",
       "choices": {
-        "n": "Neo<br>",
-        "f": "Falcon<br>",
-        "c": "CIM<br>",
+        "Neo": "Neo<br>",
+        "Falcon": "Falcon<br>",
+        "Kraken": "Kraken<br>",
+        "CIM": "CIM<br>",
         "x": "Other<br>"
       },
       "defaultValue":"x"
     },
-    { "name": "# of Batteries",
+    { "name": "# of Robot Batteries (Ex: 2604 has 8)",
       "code": "nob",
       "type": "number"
     },
@@ -77,7 +78,29 @@ var config_data = `
       "code": "opu",
       "type": "bool"
     },
-    { "name": "Autos",
+    { "name": "Ball Capacity",
+      "code": "aut",
+      "type": "number",
+      "size": 20,
+      "maxSize": 250
+    },
+    { "name": "Shooter Type",
+      "code": "str",
+      "type": "radio",
+      "choices": {
+        "Turret": "Turret<br>",
+        "Fixed": "Fixed<br>",
+        "Other": "Other"
+      },
+      "defaultValue": "Other"
+    },
+    { "name": "Other Shooter",
+      "code": "osr",
+      "type": "text",
+      "size": 20,
+      "maxSize": 50
+    },
+      { "name": "Auton Description",
       "code": "aut",
       "type": "text",
       "size": 20,
