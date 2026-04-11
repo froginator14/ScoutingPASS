@@ -78,11 +78,11 @@ var config_data = `
       "code": "fpu",
       "type": "bool"
     },
-    { "name": "Depot pickup Fuel",
+    { "name": "Depot pickup Fuel (Square box in our that has balls in it at start of the match)",
       "code": "dpu",
       "type": "bool"
     },
-    { "name": "Outpost pickup Fuel",
+    { "name": "Outpost pickup Fuel (Human Player Station)",
       "code": "opu",
       "type": "bool"
     },
