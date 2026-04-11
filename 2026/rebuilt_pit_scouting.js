@@ -108,13 +108,13 @@ var config_data = `
       "size": 20,
       "maxSize": 50
     },
-    { "name": "Swerve Ratio",
-      "code": "sr",
+    { "name": "Climber",
+      "code": "clr",
       "type": "radio",
       "choices": {
-        "L1": "L1 (8.14:1)<br>",
-        "L2": "L2 (6.75:1)<br>",
-        "L3": "L3 (6.12:1)<br>",
+        "L1": "L1<br>",
+        "L2": "L2<br>",
+        "L3": "L3<br>",
         "NA": "No Climber"
       },
       "defaultValue":"NA"
