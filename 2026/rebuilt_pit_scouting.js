@@ -27,16 +27,19 @@ var config_data = `
       "code": "Width",
       "type": "number",
       "defaultValue": "0"
+      "size": 5,
     },
      { "name": "Length",
       "code": "Length",
       "type": "number",
       "defaultValue": "0"
+      "size": 5,
     },
     { "name": "Weight",
       "code": "Weight",
       "type": "number",
       "defaultValue": "0"
+      "size": 10,
     },
     { "name": "Drivetrain",
       "code": "Drivetrain",
@@ -48,7 +51,7 @@ var config_data = `
         "Mechanum": "Mechanum<br>",
         "Other": "Other"
       },
-      "defaultValue": "o"
+      "defaultValue": "Swerve"
     },
     { "name": "Other Drivetrain",
       "code": "Other Drivetrain",
@@ -68,7 +71,7 @@ var config_data = `
         "OHS": "Other High Speed Ratio<br>",
         "N/A": "Not Swerve"
       },
-      "defaultValue":"x"
+      "defaultValue":"L2"
     },
     { "name": "Drivetrain Motor",
       "code": "Drive Motor",
@@ -79,7 +82,7 @@ var config_data = `
         "CIM": "CIM<br>",
         "X": "Other<br>"
       },
-      "defaultValue":"x"
+      "defaultValue":"Kraken"
     },
     { "name": "Other Drivetrain Motor",
       "code": "Other Drive Motor",
@@ -92,16 +95,17 @@ var config_data = `
       "type": "radio",
       "choices": {
         "Neo": "Neo<br>",
-        "Kraken": "Kraken X44<br>",
-        "Kraken": "Kraken X60<br>",
+        "Kraken X44": "Kraken X44<br>",
+        "Kraken X60": "Kraken X60<br>",
         "CIM": "CIM<br>",
         "X": "Other<br>"
       },
-      "defaultValue":"x"
+      "defaultValue":"Kraken X44"
     },
     { "name": "# of Robot Batteries <br>(Ex: 2604 has 8)",
       "code": "Number of Batteries",
       "type": "number"
+      "size": 5,
     },
     { "name": "Floor pickup Fuel",
       "code": "Floor Pickup",
@@ -118,8 +122,8 @@ var config_data = `
     { "name": "Ball Capacity",
       "code": "Ball Capacity",
       "type": "number",
-      "size": 20,
-      "maxSize": 250
+      "size": 5,
+      "maxSize": 5
     },
     { "name": "Shooter Type",
       "code": "Shooter Type",
@@ -146,7 +150,7 @@ var config_data = `
         "L3": "L3<br>",
         "N/A": "No Climber"
       },
-      "defaultValue":"NA"
+      "defaultValue":"N/A"
     },
       { "name": "Main Auton Description",
       "code": "Auton",
