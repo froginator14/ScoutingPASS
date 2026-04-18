@@ -167,13 +167,13 @@ var config_data = `
     { "name": "What are you most proud of",
       "code": "Proud",
       "type": "text",
-      "size": 50,
+      "size": 20,
       "maxSize": 250
     },
     { "name": "Comments",
       "code": "Comments",
       "type": "text",
-      "size": 50,
+      "size": 20,
       "maxSize": 250
     }
   ],
