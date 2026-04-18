@@ -71,7 +71,7 @@ var config_data = `
       "size": 20,
       "maxSize": 50
     },
-    { "name": "Swerve Ratio",
+    { "name": "Swerve Ratio <br> (The larger the #, the more torque it has)",
       "code": "Swerve Ratio",
       "type": "radio",
       "choices": {
