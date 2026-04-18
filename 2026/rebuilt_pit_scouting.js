@@ -53,10 +53,7 @@ var config_data = `
       },
       "defaultValue":"N/A"
     },
-      
-  ],
-  "auton": [
-   { "name": "Drivetrain",
+     { "name": "Drivetrain",
       "code": "Drivetrain",
       "type": "radio",
       "choices": {
@@ -117,9 +114,7 @@ var config_data = `
       },
       "defaultValue":"Kraken X44"
     },
-  ],
-  "teleop": [
-  { "name": "Floor pickup Fuel",
+      { "name": "Floor pickup Fuel",
       "code": "Floor Pickup",
       "type": "bool"
     },
@@ -155,9 +150,7 @@ var config_data = `
       "size": 20,
       "maxSize": 50
     },
-  ],
-  "endgame": [
-  { "name": "Main Auton Description",
+      { "name": "Main Auton Description",
       "code": "Auton",
       "type": "text",
       "size": 20,
@@ -181,6 +174,13 @@ var config_data = `
       "size": 50,
       "maxSize": 250
     }
+  ],
+  "auton": [
+
+  ],
+  "teleop": [
+  ],
+  "endgame": [
   ],
   "postmatch": [
   ]
