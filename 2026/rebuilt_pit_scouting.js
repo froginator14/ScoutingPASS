@@ -195,7 +195,6 @@ var config_data = `
  }
   ],
   "auton": [
-
   ],
   "teleop": [
   ],
