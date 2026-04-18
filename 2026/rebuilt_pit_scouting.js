@@ -170,13 +170,14 @@ var config_data = `
       "size": 20,
       "maxSize": 250
     },
-    { "name": "Comments",
-      "code": "Comments",
-      "type": "text",
-      "size": 20,
-      "rows": 4,
-      "maxSize": 250
-    }
+{ 
+  "name": "Comments",
+  "code": "Comments",
+  "type": "textarea",
+  "size": 20,
+  "rows": 4,
+  "maxSize": 250
+}
   ],
   "auton": [
 
