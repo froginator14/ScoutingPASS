@@ -15,8 +15,6 @@ var config_data = `
     { "name": "Team Number",
       "code": "Team Number",
       "type": "number",
-      "size": 5,
-      "maxSize": 5,
       "required": "true"
     },
     { "name": "Robot Name",
