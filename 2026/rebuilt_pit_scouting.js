@@ -129,10 +129,12 @@ var config_data = `
     { "name": "Ball Capacity",
       "code": "Ball Capacity",
       "type": "number",
+      "defaultValue": "0"
     },
     { "name": "Ball Shot per Second",
       "code": "Ball Shot Speed",
       "type": "number",
+      "defaultValue": "0"
     },
     { "name": "Shooter Type",
       "code": "Shooter Type",
