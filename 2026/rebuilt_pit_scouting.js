@@ -174,6 +174,7 @@ var config_data = `
       "code": "Comments",
       "type": "text",
       "size": 20,
+      "rows": 4,
       "maxSize": 250
     }
   ],
