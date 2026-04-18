@@ -6,29 +6,40 @@ var config_data = `
   "pitConfig": "true",
   "prematch": [
    { "name": "Scouter Initials",
-      "code": "s",
+      "code": "Scouter Initials",
       "type": "scouter",
       "size": 5,
       "maxSize": 5,
       "required": "true"
     },
     { "name": "Team Number",
-      "code": "t",
+      "code": "Team Number",
       "type": "number",
       "required": "true"
     },
+    { "name": "Robot Name",
+      "code": "Robot Name",
+      "type": "text",
+      "size": 20,
+      "maxSize": 50
+    },
     { "name": "Width",
-      "code": "wid",
+      "code": "Width",
+      "type": "number",
+      "defaultValue": "0"
+    },
+     { "name": "Length",
+      "code": "Length",
       "type": "number",
       "defaultValue": "0"
     },
     { "name": "Weight",
-      "code": "wei",
+      "code": "Weight",
       "type": "number",
       "defaultValue": "0"
     },
     { "name": "Drivetrain",
-      "code": "drv",
+      "code": "Drivetrain",
       "type": "radio",
       "choices": {
         "Swerve": "Swerve<br>",
@@ -40,60 +51,78 @@ var config_data = `
       "defaultValue": "o"
     },
     { "name": "Other Drivetrain",
-      "code": "odt",
+      "code": "Other Drivetrain",
       "type": "text",
       "size": 20,
       "maxSize": 50
     },
     { "name": "Swerve Ratio",
-      "code": "sr",
+      "code": "Swerve Ratio",
       "type": "radio",
       "choices": {
         "L1": "L1 (8.14:1)<br>",
         "L2": "L2 (6.75:1)<br>",
         "L3": "L3 (6.12:1)<br>",
         "L4": "L4 (5.14:1)<br>",
-        "o": "Other ratio (put in comments)<br>",
-        "x": "Not Swerve"
+        "OHT": "Other High Torque Ratio<br>",
+        "OHS": "Other High Speed Ratio<br>",
+        "N/A": "Not Swerve"
       },
       "defaultValue":"x"
     },
     { "name": "Drivetrain Motor",
-      "code": "mot",
+      "code": "Drive Motor",
       "type": "radio",
       "choices": {
         "Neo": "Neo<br>",
-        "Falcon": "Falcon<br>",
-        "Kraken": "Kraken<br>",
+        "Kraken": "Kraken X60<br>",
         "CIM": "CIM<br>",
-        "x": "Other<br>"
+        "X": "Other<br>"
       },
       "defaultValue":"x"
     },
-    { "name": "# of Robot Batteries (Ex: 2604 has 8)",
-      "code": "nob",
+    { "name": "Other Drivetrain Motor",
+      "code": "Other Drive Motor",
+      "type": "text",
+      "size": 20,
+      "maxSize": 50
+    },
+    { "name": "Drivetrain Steer Motor",
+      "code": "Steer Motor",
+      "type": "radio",
+      "choices": {
+        "Neo": "Neo<br>",
+        "Kraken": "Kraken X44<br>",
+        "Kraken": "Kraken X60<br>",
+        "CIM": "CIM<br>",
+        "X": "Other<br>"
+      },
+      "defaultValue":"x"
+    },
+    { "name": "# of Robot Batteries <br>(Ex: 2604 has 8)",
+      "code": "Number of Batteries",
       "type": "number"
     },
     { "name": "Floor pickup Fuel",
-      "code": "fpu",
+      "code": "Floor Pickup",
       "type": "bool"
     },
-    { "name": "Depot pickup Fuel (Square box in our that has balls in it at start of the match)",
-      "code": "dpu",
+    { "name": "Depot pickup Fuel <br>(Square box in our that has balls in it at start of the match)",
+      "code": "Depot Pickup",
       "type": "bool"
     },
-    { "name": "Outpost pickup Fuel (Human Player Station)",
-      "code": "opu",
+    { "name": "Outpost pickup Fuel <br>(Human Player Station)",
+      "code": "Outpost Pickup",
       "type": "bool"
     },
     { "name": "Ball Capacity",
-      "code": "aut",
+      "code": "Ball Capacity",
       "type": "number",
       "size": 20,
       "maxSize": 250
     },
     { "name": "Shooter Type",
-      "code": "str",
+      "code": "Shooter Type",
       "type": "radio",
       "choices": {
         "Turret": "Turret<br>",
@@ -102,39 +131,39 @@ var config_data = `
       },
       "defaultValue": "Other"
     },
-    { "name": "Other Shooter",
-      "code": "osr",
+    { "name": "Other Shooter Type",
+      "code": "Other Shooter Type",
       "type": "text",
       "size": 20,
       "maxSize": 50
     },
     { "name": "Climber",
-      "code": "clr",
+      "code": "Climber",
       "type": "radio",
       "choices": {
         "L1": "L1<br>",
         "L2": "L2<br>",
         "L3": "L3<br>",
-        "NA": "No Climber"
+        "N/A": "No Climber"
       },
       "defaultValue":"NA"
     },
-      { "name": "Auton Description",
-      "code": "aut",
+      { "name": "Main Auton Description",
+      "code": "Auton",
       "type": "text",
       "size": 20,
       "maxSize": 250
     },
     { "name": "Scouting Method /<br>Program (ScoutingPASS?)",
-      "code": "sct",
+      "code": "Scouting",
       "type": "text",
       "size": 20,
       "maxSize": 250
     },
     { "name": "Comments",
-      "code": "co",
+      "code": "Comments",
       "type": "text",
-      "size": 20,
+      "size": 50,
       "maxSize": 250
     }
   ],
