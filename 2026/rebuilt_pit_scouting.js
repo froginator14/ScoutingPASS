@@ -158,6 +158,23 @@ var config_data = `
       "size": 20,
       "maxSize": 250
     },
+        { "name": "Drivetrain Motor",
+      "code": "Drive Motor",
+      "type": "radio",
+      "choices": {
+        "Limelight": "Limelight<br>",
+        "PhotonVision": "PhotonVision<br>",
+        "Mix": "Limelight & PhotonVision (just on non-limelight devices)<br>",
+        "X": "Other<br>"
+      },
+      "defaultValue":"X"
+    },
+    { "name": "Other Vision System",
+      "code": "Other Vision",
+      "type": "text",
+      "size": 20,
+      "maxSize": 50
+    },
     { "name": "Scouting Method /<br>Program (ScoutingPASS?)",
       "code": "Scouting",
       "type": "text",
@@ -174,8 +191,6 @@ var config_data = `
   "name": "Comments",
   "code": "Comments",
   "type": "textarea",
-  "size": 20,
-  "rows": 4,
   "maxSize": 250
 }
   ],
