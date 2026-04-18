@@ -27,21 +27,36 @@ var config_data = `
       "code": "Width",
       "type": "number",
       "defaultValue": "0"
-      "size": 5,
     },
      { "name": "Length",
       "code": "Length",
       "type": "number",
       "defaultValue": "0"
-      "size": 5,
     },
     { "name": "Weight",
       "code": "Weight",
       "type": "number",
       "defaultValue": "0"
-      "size": 10,
     },
-    { "name": "Drivetrain",
+    { "name": "# of Robot Batteries <br>(Ex: 2604 has 8)",
+      "code": "Number of Batteries",
+      "type": "number"
+    },
+    { "name": "Climber",
+      "code": "Climber",
+      "type": "radio",
+      "choices": {
+        "L1": "L1<br>",
+        "L2": "L2<br>",
+        "L3": "L3<br>",
+        "N/A": "No Climber"
+      },
+      "defaultValue":"N/A"
+    },
+      
+  ],
+  "auton": [
+   { "name": "Drivetrain",
       "code": "Drivetrain",
       "type": "radio",
       "choices": {
@@ -102,12 +117,9 @@ var config_data = `
       },
       "defaultValue":"Kraken X44"
     },
-    { "name": "# of Robot Batteries <br>(Ex: 2604 has 8)",
-      "code": "Number of Batteries",
-      "type": "number"
-      "size": 5,
-    },
-    { "name": "Floor pickup Fuel",
+  ],
+  "teleop": [
+  { "name": "Floor pickup Fuel",
       "code": "Floor Pickup",
       "type": "bool"
     },
@@ -122,8 +134,10 @@ var config_data = `
     { "name": "Ball Capacity",
       "code": "Ball Capacity",
       "type": "number",
-      "size": 5,
-      "maxSize": 5
+    },
+    { "name": "Ball Shot per Second",
+      "code": "Ball Shot Speed",
+      "type": "number",
     },
     { "name": "Shooter Type",
       "code": "Shooter Type",
@@ -141,18 +155,9 @@ var config_data = `
       "size": 20,
       "maxSize": 50
     },
-    { "name": "Climber",
-      "code": "Climber",
-      "type": "radio",
-      "choices": {
-        "L1": "L1<br>",
-        "L2": "L2<br>",
-        "L3": "L3<br>",
-        "N/A": "No Climber"
-      },
-      "defaultValue":"N/A"
-    },
-      { "name": "Main Auton Description",
+  ],
+  "endgame": [
+  { "name": "Main Auton Description",
       "code": "Auton",
       "type": "text",
       "size": 20,
@@ -164,18 +169,18 @@ var config_data = `
       "size": 20,
       "maxSize": 250
     },
+    { "name": "What are you most proud of",
+      "code": "Proud",
+      "type": "text",
+      "size": 50,
+      "maxSize": 250
+    }
     { "name": "Comments",
       "code": "Comments",
       "type": "text",
       "size": 50,
       "maxSize": 250
     }
-  ],
-  "auton": [
-  ],
-  "teleop": [
-  ],
-  "endgame": [
   ],
   "postmatch": [
   ]
