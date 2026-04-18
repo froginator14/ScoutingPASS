@@ -256,3 +256,11 @@ textarea[name="Comments"] {
     display: block;      /* Keeps it from floating weirdly */
     margin: 5px 0;
 }
+/* This targets the specific 'Comments' input box */
+input[name="Comments"] {
+    display: inline-block;
+    height: 100px;        /* This gives you the "rows" look */
+    width: 250px;         /* Keeps the width consistent */
+    vertical-align: top;  /* Ensures text starts at the top */
+    word-break: break-all;
+}
