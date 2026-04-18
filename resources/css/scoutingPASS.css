@@ -244,23 +244,3 @@ input {
     font-family:'Lucida Console', 'monospace';
     text-align: justify;
 }
-/* Style for the multi-line comment box */
-textarea[name="Comments"] {
-    width: 90%;          /* Uses 90% of the container width */
-    max-width: 400px;    /* Prevents it from getting too wide on desktop */
-    height: 80px;        /* Sets the height (rows) */
-    font-size: 16px;
-    font-family: sans-serif;
-    padding: 5px;
-    resize: vertical;    /* Allows the user to drag to resize it */
-    display: block;      /* Keeps it from floating weirdly */
-    margin: 5px 0;
-}
-/* This targets the specific 'Comments' input box */
-input[name="Comments"] {
-    display: inline-block;
-    height: 100px;        /* This gives you the "rows" look */
-    width: 250px;         /* Keeps the width consistent */
-    vertical-align: top;  /* Ensures text starts at the top */
-    word-break: break-all;
-}
