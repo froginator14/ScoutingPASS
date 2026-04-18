@@ -169,7 +169,7 @@ var config_data = `
       "type": "text",
       "size": 50,
       "maxSize": 250
-    }
+    },
     { "name": "Comments",
       "code": "Comments",
       "type": "text",
